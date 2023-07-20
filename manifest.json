@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Copy Decoded URL",
+  "name": "Remove Line Breaks",
   "version": "1.0",
   "action": {
     "default_icon":{
@@ -11,7 +11,7 @@
     "128":  "images/128.png"
   },
   "default_locale": "ja_JP",
-  "description": "Copy decoded URL",
+  "description": "Remove Line Breaks",
   "permissions": ["activeTab","scripting"],
   "background" :{
     "service_worker": "background.js"
