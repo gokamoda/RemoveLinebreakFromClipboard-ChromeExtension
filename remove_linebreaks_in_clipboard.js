@@ -25,7 +25,9 @@ async function writeToClipboard(text) {
 }
 
 function removeLineBreaks(text) {
-  return text.replace(/\r?\n|\r/g, '');
+  text = text.replace(/ \r?\n| \r/g, ' ');
+  text = text.replace(/-\r?\n| \r/g, '-');
+  return text.replace(/\r?\n|\r/g, ' ');
 }
 async function processClipboardText() {
   const clipboardText = await getClipboardText();
